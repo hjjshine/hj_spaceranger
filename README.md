@@ -5,7 +5,7 @@ Includes:
 - Workflow pipelines (work in progress)
 
 Building and pushing docker images:
-Please download the spaceranger tar.gz file in this folder `dockers/spaceranger-4.0.1`, and then run the following commands to build and push the docker images.
+- Please download the spaceranger tar.gz file in this folder `dockers/spaceranger-4.0.1`, and then run the following commands to build and push the docker images.
 
 ```
 docker buildx build \
