@@ -4,5 +4,17 @@ Includes:
 - Docker images required for running Cumulus pipeline (with Spaceranger v4.0 installed)
 - Workflow pipelines (work in progress)
 
+Building and pushing docker images:
+`docker buildx build \
+  --platform linux/amd64 \ #for terra workflows
+  --push \
+  -t gcr.io/vanallen-junhyeji/spaceranger:4.0.1 \
+  --no-cache .`
+  
+`docker buildx build \
+  --platform linux/amd64 \
+  --push \
+  -t gcr.io/vanallen-junhyeji/config:0.3 \
+  --no-cache .`
 
 
